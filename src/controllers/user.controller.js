@@ -69,8 +69,8 @@ const registerUser = asyncHandler( async (req, res) => {
         username: username.toLowerCase()
     })
 
-    console.log("avatarResponse:", avatar);
-    console.log("coverImageResponse:", coverImage);
+    // console.log("avatarResponse:", avatar);
+    // console.log("coverImageResponse:", coverImage);
 
     const createdUser = await User.findById(user._id).select(
         "-password -refreshToken"
