@@ -210,9 +210,21 @@ const getVideoById = asyncHandler(async (req, res) => {
         {
             $addFields: {
                 likesCount: { $size: "$likes" },
+                // isLiked: {
+                //     $cond: {
+                //         if: { $in: [req.user._id, "$likes.likedBy"] },
+                //         then: true,
+                //         else: false,
+                //     },
+                // },
                 isLiked: {
                     $cond: {
-                        if: { $in: [req.user._id, "$likes.likedBy"] },
+                        if: {
+                            $and: [
+                                { $ne: [req.user?._id, null] },
+                                { $in: [req.user?._id, "$likes.likedBy"] }
+                            ]
+                        },
                         then: true,
                         else: false,
                     },
@@ -232,9 +244,13 @@ const getVideoById = asyncHandler(async (req, res) => {
     await Video.findByIdAndUpdate(videoId, { $inc: { views: 1 } })
 
     // Add to logged-in user's watch history
-    await User.findByIdAndUpdate(req.user._id, {
-        $addToSet: { watchHistory: videoId }, // $addToSet avoids duplicates
-    })
+    if (req.user?._id) {
+        await User.findByIdAndUpdate(req.user._id, {
+            $addToSet: {
+                watchHistory: videoId,
+            },
+        })
+    }
 
     return res
         .status(200)
