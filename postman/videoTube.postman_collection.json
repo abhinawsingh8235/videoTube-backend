@@ -1,0 +1,1356 @@
+{
+  "info": {
+    "_postman_id": "ff8973e0-5c72-493b-9043-379d3015ad3a",
+    "name": "videoTube",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51592411",
+    "_collection_link": "https://go.postman.co/collection/51592411-ff8973e0-5c72-493b-9043-379d3015ad3a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "fullName",
+                  "value": "Abhinaw Singh",
+                  "type": "text",
+                  "uuid": "684e9516-6b76-4251-a604-58ee9ab00bd1"
+                },
+                {
+                  "key": "email",
+                  "value": "abhinawsingh8235@gmail.com",
+                  "type": "text",
+                  "uuid": "ce771963-3877-46f1-aa2f-ed7fb74ccc8a"
+                },
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "type": "text",
+                  "uuid": "3b7c4d19-dc38-4f5d-8689-9bf4cf122a53"
+                },
+                {
+                  "key": "username",
+                  "value": "chaiaurcode",
+                  "type": "text",
+                  "uuid": "8078a2ac-9f61-4c6d-b72e-c7dee7ff2db7"
+                },
+                {
+                  "key": "avatar",
+                  "type": "file",
+                  "uuid": "363b6f96-dc4f-4d69-bff3-e095d5aff16e",
+                  "src": "/C:/Users/HP/OneDrive/Pictures/chatgpt image aug 30, 2025, 11_39_54 pm.png"
+                },
+                {
+                  "key": "coverImage",
+                  "type": "file",
+                  "uuid": "a80058ff-6b9c-46b9-bf0b-5491b3e4e777",
+                  "src": "/C:/Users/HP/OneDrive/Pictures/Screenshot_2023-12-02-18-38-04-315_com.instagram.android.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"abhinawsingh8235@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "registerUserB",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "fullName",
+                  "value": "User B",
+                  "type": "text",
+                  "uuid": "8f85069b-d007-4321-9025-020a42dc73d3"
+                },
+                {
+                  "key": "email",
+                  "value": "abhinawsingh9345@gmail.com",
+                  "type": "text",
+                  "uuid": "d42a2a21-6317-43c6-803d-839d052227b1"
+                },
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "type": "text",
+                  "uuid": "ffb22fc6-05c4-4656-a220-b7b649284160"
+                },
+                {
+                  "key": "username",
+                  "value": "testuser",
+                  "type": "text",
+                  "uuid": "98ae5a91-5d82-4f86-a641-1a4bb903817b"
+                },
+                {
+                  "key": "avatar",
+                  "type": "file",
+                  "uuid": "722317c8-7ef1-4dce-81b5-59fd9da05613",
+                  "src": "/F:/abhinaw (old pics)/me/IMG-20230405-WA0004.jpg"
+                },
+                {
+                  "key": "coverImage",
+                  "type": "file",
+                  "uuid": "a1493035-0714-4c9f-861a-73d6f7e68f18",
+                  "src": "/F:/New folder/WhatsApp Images/IMG-20220612-WA0033.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "loginUserB",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"abhinawsingh9345@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logoutUserB",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTMwYTBhZWE4MGRjMmYwZGM2YzA4M2EiLCJlbWFpbCI6ImFiaGluYXdzaW5naDkzNDVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImZ1bGxOYW1lIjoiVXNlciBCIiwiaWF0IjoxNzgxNTc2MjQzLCJleHAiOjE3ODE2NjI2NDN9.SDXxqnSv2xxdpjlZlfAMp7YYi85B6aa1aSjVyI3P_S8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/users/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "users",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "item": [
+        {
+          "name": "getAllVideos",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNkODg4ODU0NzVjYTdlNzA1NDBmZjgiLCJlbWFpbCI6ImFiaGluYXdzaW5naDgyMzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJjaGFpYXVyY29kZSIsImZ1bGxOYW1lIjoiQWJoaW5hdyBTaW5naCIsImlhdCI6MTc4MTQ0NzEyNCwiZXhwIjoxNzgxNTMzNTI0fQ.97vGSicyyuGZScZgtt5Qsdbol2VHhDocoR6TG40h7yk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "publishAVideo",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "my first video",
+                  "type": "text",
+                  "uuid": "f8544146-a6e0-4d7c-8965-841d21a10571"
+                },
+                {
+                  "key": "description",
+                  "value": "testing upload",
+                  "type": "text",
+                  "uuid": "493ee766-de8a-44b9-83c3-661e72af2688"
+                },
+                {
+                  "key": "videoFile",
+                  "type": "file",
+                  "uuid": "c824b963-4747-415f-b61c-2ffecfdd0f33",
+                  "src": "/F:/ananya (dii) MARRIAGE/MY PHONE/dii marriage( whatsaap vids)/VID-20231210-WA0030.mp4"
+                },
+                {
+                  "key": "thumbnail",
+                  "type": "file",
+                  "uuid": "cbb0a0e8-3671-4f81-93e9-b0d2acb7f376",
+                  "src": "/F:/ananya (dii) MARRIAGE/MY PHONE/dii marriage (DOC)/IMG_0256.JPG"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getVideoById",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNkODg4ODU0NzVjYTdlNzA1NDBmZjgiLCJlbWFpbCI6ImFiaGluYXdzaW5naDgyMzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJjaGFpYXVyY29kZSIsImZ1bGxOYW1lIjoiQWJoaW5hdyBTaW5naCIsImlhdCI6MTc4MTQ0NzEyNCwiZXhwIjoxNzgxNTMzNTI0fQ.97vGSicyyuGZScZgtt5Qsdbol2VHhDocoR6TG40h7yk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos/6a2ed56821779724ba1057cc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos",
+                "6a2ed56821779724ba1057cc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "updateVideo",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNkODg4ODU0NzVjYTdlNzA1NDBmZjgiLCJlbWFpbCI6ImFiaGluYXdzaW5naDgyMzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJjaGFpYXVyY29kZSIsImZ1bGxOYW1lIjoiQWJoaW5hdyBTaW5naCIsImlhdCI6MTc4MTQ0NzEyNCwiZXhwIjoxNzgxNTMzNTI0fQ.97vGSicyyuGZScZgtt5Qsdbol2VHhDocoR6TG40h7yk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "updated first video",
+                  "type": "text",
+                  "uuid": "00f8c088-c796-4ff1-abff-df19879f9632",
+                  "disabled": true
+                },
+                {
+                  "key": "description",
+                  "value": "updated description",
+                  "type": "text",
+                  "uuid": "da9cb48a-1bc6-4641-a69a-b1d6c6ebaa7b",
+                  "disabled": true
+                },
+                {
+                  "key": "thumbnail",
+                  "type": "file",
+                  "uuid": "2731e046-e873-4470-84d3-083c49f4c5cd",
+                  "src": "/F:/ananya (dii) MARRIAGE/MY PHONE/dii marriage (DOC)/IMG_0309.JPG"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos/6a2ed56821779724ba1057cc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos",
+                "6a2ed56821779724ba1057cc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "togglePublishStatus",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNkODg4ODU0NzVjYTdlNzA1NDBmZjgiLCJlbWFpbCI6ImFiaGluYXdzaW5naDgyMzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJjaGFpYXVyY29kZSIsImZ1bGxOYW1lIjoiQWJoaW5hdyBTaW5naCIsImlhdCI6MTc4MTQ0NzEyNCwiZXhwIjoxNzgxNTMzNTI0fQ.97vGSicyyuGZScZgtt5Qsdbol2VHhDocoR6TG40h7yk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos/toggle/publish/6a2ed56821779724ba1057cc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos",
+                "toggle",
+                "publish",
+                "6a2ed56821779724ba1057cc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deleteVideo",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OWNkODg4ODU0NzVjYTdlNzA1NDBmZjgiLCJlbWFpbCI6ImFiaGluYXdzaW5naDgyMzVAZ21haWwuY29tIiwidXNlcm5hbWUiOiJjaGFpYXVyY29kZSIsImZ1bGxOYW1lIjoiQWJoaW5hdyBTaW5naCIsImlhdCI6MTc4MTQ0NzEyNCwiZXhwIjoxNzgxNTMzNTI0fQ.97vGSicyyuGZScZgtt5Qsdbol2VHhDocoR6TG40h7yk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/v1/videos/6a2ed56821779724ba1057cc",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "videos",
+                "6a2ed56821779724ba1057cc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "comments",
+      "item": [
+        {
+          "name": "addComment",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\": \"This is my first comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/comments/{{videoId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "comments",
+                "{{videoId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getComments",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/comments/{{videoId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "comments",
+                "{{videoId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "updateComment",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\": \"Updated Comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/comments/c/6a2f960b69751525dd534dca",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "comments",
+                "c",
+                "6a2f960b69751525dd534dca"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deleteComment",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/comments/c/6a300598361c218bdfd9315c",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "comments",
+                "c",
+                "6a300598361c218bdfd9315c"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "likes",
+      "item": [
+        {
+          "name": "toggleVideoLike",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/likes/toggle/v/{{videoId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "likes",
+                "toggle",
+                "v",
+                "{{videoId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "toggleCommentLike",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/likes/toggle/c/6a300839361c218bdfd9316e",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "likes",
+                "toggle",
+                "c",
+                "6a300839361c218bdfd9316e"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getLikedVideos",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/likes/toggle/v/{{videoId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "likes",
+                "toggle",
+                "v",
+                "{{videoId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAllLikedVideos",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/likes/videos",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "likes",
+                "videos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "toggleTweetLike",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userBToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/likes/toggle/t/{{tweetId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "likes",
+                "toggle",
+                "t",
+                "{{tweetId}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "subscription",
+      "item": [
+        {
+          "name": "Subscribe/UnSubscribe UserB",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/subscriptions/c/{{userBId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "subscriptions",
+                "c",
+                "{{userBId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Subscribers Of UserB",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/subscriptions/u/{{userBId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "subscriptions",
+                "u",
+                "{{userBId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Channels Of UserA",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/subscriptions/subscribed/{{userAId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "subscriptions",
+                "subscribed",
+                "{{userAId}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "tweets",
+      "item": [
+        {
+          "name": "Create Tweet",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"content\": \"My first tweet\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tweets",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tweets"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Tweets",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/tweets/user/{{userAId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tweets",
+                "user",
+                "{{userAId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Tweet",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"content\": \"Updated tweet content\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/tweets/{{tweetId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tweets",
+                "{{tweetId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Tweet",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/tweets/{{tweetId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "tweets",
+                "{{tweetId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Like/UnLike Tweet",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "playlists",
+      "item": [
+        {
+          "name": "Create Playlist",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Backend Playlist\",\r\n  \"description\": \"My backend learning playlist\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/playlists",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get User Playlists",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/playlists/user/{{userAId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "user",
+                "{{userAId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Playlist By Id",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/playlists/{{playlistId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "{{playlistId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Video To Playlist",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/playlists/add/{{videoId}}/{{playlistId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "add",
+                "{{videoId}}",
+                "{{playlistId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Video From Playlist",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/playlists/remove/{{videoId}}/{{playlistId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "remove",
+                "{{videoId}}",
+                "{{playlistId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Playlist",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"name\": \"Updated Playlist\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/playlists/{{playlistId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "{{playlistId}}"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Playlist",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/playlists/{{playlistId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "playlists",
+                "{{playlistId}}"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "dashboard",
+      "item": [
+        {
+          "name": "Get Channel Stats",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/stats",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "stats"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Channel Videos",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{userAToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/videos",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "videos"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "healthcheck",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/healthcheck",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "healthcheck"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
