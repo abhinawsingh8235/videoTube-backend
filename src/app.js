@@ -15,6 +15,14 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
 
+// Root Route
+app.get("/", (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "VideoTube Backend API is running 🚀",
+        healthCheck: "/api/v1/healthcheck"
+    });
+});
 
 // routes import
 import userRouter from './routes/user.routes.js'
